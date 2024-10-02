@@ -1,0 +1,128 @@
+
+  *{
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  
+  
+  .btn-donacion {
+    background-color: #0010a1; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center;
+  }
+
+  .btn-donacion:hover {
+    background-color: #ffffff;
+  }
+
+  .navbar{   
+        font-family: "Patua One", serif;
+        font-weight: 400;
+        font-style: normal;
+       background-color: rgb(0, 0, 0);   
+  }
+  .nav-link{
+    color: white;
+
+  }
+  .nav-link:hover{
+    background-color: #000e8b;
+    border-radius: 1em;
+    transition: 0.8s ;
+    color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-toggler {
+      background-color: rgb(0, 6, 97);
+   
+    }
+    .navbar-toggler-icon {
+      background-color: rgb(0, 6, 97); 
+    }
+    .btn-donacion {
+      padding: 10px 20px; 
+      border-radius: 100px; 
+     
+    }
+
+    .nav-link:hover{
+      background-color: #000e8b;
+      border-radius: 20em;
+      padding: 20px;
+      transition: 2s ;
+      width: 10em;
+      color: #ffffff;
+    }
+  }
+  .carousel-img {
+    width: 100%; 
+    max-height: 765px; 
+    object-fit: cover;
+    margin: 0 auto; 
+    opacity: 1; 
+    transition: opacity 0.9s ease;
+  }
+  .carousel-img-container{
+    position: relative;
+  }
+  .Carousel-Text{
+    position: absolute; 
+    bottom: 260px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    
+  }
+  .Carousel-Text h2{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    background-color: #00087c;
+   border: #0505056c 2px solid;
+padding: 10px;
+border-radius: 100em;
+
+  }
+
+    .Carousel-Text h3{
+    font-size: 5.5em;
+     color: #ffffff;
+    padding: 20px;
+    opacity: 0; 
+    transition: opacity 2s; 
+
+  }
+  .Carousel-Text.active h3 {
+    opacity: 1; 
+}
+
+@media (max-width: 767px) {
+  .carousel-img {
+    max-height: 350px;
+    object-fit: cover;
+    transition: opacity 0.9s ease;
+  }
+  .Carousel-Text{
+    bottom: 100px; 
+  }
+  .Carousel-Text h2{
+    font-size: 1em;
+  }
+
+    .Carousel-Text h3{
+    font-size: 2.2em;
+  }
+
+
+
+ 
+ }
