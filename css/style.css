@@ -34,14 +34,17 @@
     transition: 0.8s ;
     color: #ffffff;
   }
+  .logo-img{
+    width: 12vh;
+  }
 
   @media (max-width: 767px) {
     .navbar-toggler {
-      background-color: rgb(0, 6, 97);
+      background-color: rgb(17, 28, 175);
    
     }
     .navbar-toggler-icon {
-      background-color: rgb(0, 6, 97); 
+      background-color: rgb(4, 14, 158); 
     }
     .btn-donacion {
       padding: 10px 20px; 
