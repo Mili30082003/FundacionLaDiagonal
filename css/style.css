@@ -5,7 +5,12 @@
     padding: 0;
   }
   
+  body{
+
+    min-height: 600px;
   
+  }
+/* boton de donaciones*/
   .btn-donacion {
     background-color: #0010a1; 
     color: white; 
@@ -41,7 +46,7 @@
    width: 40%;
   }
 
-
+/*estilos para el nav */
   .navbar{   
         font-family: "Patua One", serif;
         font-weight: 400;
@@ -61,7 +66,7 @@
   .logo-img{
     width: 12vh;
   }
-
+/* estilos para tablets*/
   @media (max-width: 767px) {
     .navbar-toggler {
       background-color: rgb(17, 28, 175);
@@ -85,6 +90,8 @@
       color: #ffffff;
     }
   }
+
+  /*estilos para el carousel */
   .carousel-img {
     width: 100%; 
     max-height: 765px; 
@@ -131,7 +138,7 @@ border-radius: 100em;
   .Carousel-Text.active h3 {
     opacity: 1; 
 }
-
+/* carousel para tablets*/
 @media (max-width: 767px) {
   .carousel-img {
     max-height: 350px;
@@ -148,8 +155,268 @@ border-radius: 100em;
     .Carousel-Text h3{
     font-size: 2.2em;
   }
-
-
-
- 
  }
+
+ /*NOTICIAS*/
+/* Estilo para el contenedor de noticias */
+#news-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap; /* Permite que las noticias se ajusten a nuevas filas si no caben */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Estilo para cada noticia */
+.news-item {
+  background-color: #fdf2e9; /* Color de fondo más cálido */
+  padding: 20px;
+  border: 1px solid #eee;
+  width: 30%; /* Ocupa el 30% del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Para evitar que el contenido desborde */
+}
+
+/* Añadir un efecto de hover */
+.news-item:hover {
+  transform: translateY(-5px); /* Pequeño movimiento hacia arriba */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+/* Imagen dentro de cada noticia */
+.news-item img {
+  max-width: 100%; /* La imagen se ajusta al contenedor */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados en las imágenes */
+  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Tipografía */
+.news-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: justify; /* Justifica el texto para mejor presentación */
+}
+
+/* Responsivo: Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .news-item {
+    width: 45%; /* En pantallas medianas, cada noticia ocupará el 45% del ancho */
+  }
+}
+
+@media (max-width: 576px) {
+  .news-item {
+    width: 100%; /* En pantallas pequeñas, cada noticia ocupará el 100% del ancho */
+  }
+}
+/*FORMULARIO*/
+.container.donacion-form {
+  background-color: #FFFFFF; /* Fondo blanco */
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease;
+}
+
+.container.donacion-form:hover {
+  transform: scale(1.02); /* Pequeña animación al pasar el mouse */
+}
+
+.titulo {
+  color: #000000; /* Título en negro */
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-group label {
+  color: #333333; /* Etiquetas en gris oscuro */
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-estilizado {
+  border: 2px solid #0000FF; /* Borde azul moderno */
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-estilizado:focus {
+  border-color: #1e90ff; /* Borde azul claro al enfocar */
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* Sombra al enfocar */
+  outline: none;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  color: #000000; /* Texto de política en negro */
+}
+
+.boton-donar {
+  background-color: #1e90ff; /* Azul suave */
+  color: #FFFFFF; /* Texto en blanco */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-donar:hover {
+  background-color: #000000; /* Botón negro al hacer hover */
+  color: #FFFFFF;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+  cursor: pointer;
+}
+
+.boton-donar:active {
+  transform: scale(0.98); /* Efecto de presión al hacer click */
+}
+
+/* Añadido para dispositivos móviles */
+@media (max-width: 768px) {
+  .container.donacion-form {
+      padding: 20px;
+  }
+
+  .titulo {
+      font-size: 1.8em;
+  }
+
+  .boton-donar {
+      font-size: 1em;
+  }
+}
+.contenedor-form-imagen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.formulario {
+  width: 50%; /* El formulario ocupa la mitad del contenedor */
+  padding-right: 20px;
+}
+
+.imagen {
+  width: 50%; /* La imagen ocupa la mitad del contenedor */
+}
+
+.img-responsive {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor-form-imagen {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .formulario, .imagen {
+      width: 100%; /* En pantallas pequeñas, ocupan el 100% */
+      padding: 0;
+  }
+
+  .formulario {
+      margin-bottom: 20px;
+  }
+}
+
+
+/*NOSOTROS*/
+.about{
+
+}
+#caja-about1 h3{
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5em;
+  color: #0010a1;
+
+
+}
+#caja-about1 p{ 
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+ 
+
+
+}
+#caja-about1{
+  background-color: #0c0c0c;
+  color: #eee;
+
+}
+#caja-about2 p{
+font-size: 1.4em;
+font-family: "Patua One", serif;
+font-weight: 400;
+font-style: normal;
+
+
+}
+#caja-about2{
+  background-color: #060749;
+  color: #eee;
+
+}
+.boton-about {
+  background-color: #fdf2e9;
+  color: #000e8b;
+  margin-top: 2em;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.boton-about:hover{
+  background-color: #000000;
+  color: #fbfcff;
+  transition: 1s;
+}
+
+/*MARQUEE*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  margin: 10px;
+  max-width: 200px; /* Ajusta según sea necesario */
+  border: 2px solid #000; /* Borde opcional */
+}

@@ -78,9 +78,128 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
 </section>
+
+
+<!------------------------------------------NOTICIAS------------------------------------------------------->
+<main>
+  <section id="news" class="container">
+    <h2>Últimas Noticias</h2>
+    <div id="news-container"></div>
+</section>
+
+<!------------------------------------------SOBRE NOSOTROS------------------------------------------------------->
+<section  class="container-fluid  about">
+  <div class="row align-items-center " id="caja-about1">
+    <div class="col-md-6" >
+      <h3>La Diagonal Futsal</h3>
+      <p>
+        Es una fundación dedicada a promover el deporte y la inclusión social a través del fútbol sala. 
+        Nuestro objetivo es brindar a niños y jóvenes en situación de vulnerabilidad la oportunidad de aprender y disfrutar del 
+        futsal, desarrollando habilidades deportivas, fomentando la disciplina y el trabajo en equipo.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="./img/FotoDiagonal3.jpg" alt="La Diagonal Futsal" class="img-fluid rounded w-100 mt-2 mb-2">
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-4" id="caja-about2">
+    <div class="col-md-6 order-md-1" >
+      <img src="./img/FotoDiagonal3.jpg" alt="La Diagonal Futsal" class="img-fluid rounded mt-2 mb-2">
+    </div>
+    <div class="col-md-6 order-md-2">
+      <p>
+        Creemos firmemente que el deporte es una herramienta poderosa para construir una sociedad más justa y solidaria. 
+        A través de nuestras actividades y programas, buscamos no solo formar deportistas, sino también fomentar valores 
+        como el respeto, la tolerancia y la amistad.
+      </p>
+      <a href="http://" target="_blank" rel="noopener noreferrer" class="btn  boton-about">Ver Mas Informacion</a>
+    </div>
+  </div>
+  
+  
+
+  
+
+ 
+</section>
+
+<!------------------------------------------DONACIONES------------------------------------------------------->
+<div class="container">
+  <div class="row align-items-center">
+    <!-- Columna para el formulario -->
+    <div class="col-md-6">
+      <h1 class="text-start titulo">Donación</h1>
+      <form action="./php/donacion.php" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+              <label for="cantidad">Introduce una cantidad a donar:</label>
+              <input type="number" class="form-control input-estilizado" id="cantidad" name="cantidad" required>
+          </div>
+
+          <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control input-estilizado" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-group">
+              <label for="apellido">Apellido:</label>
+              <input type="text" class="form-control input-estilizado" id="apellido" name="apellido" required>
+          </div>
+
+          <div class="form-group">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" class="form-control input-estilizado" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+              <label for="empresa">Empresa: (Si no es una empresa, omite este paso)</label>
+              <input type="text" class="form-control input-estilizado" id="empresa" name="empresa">
+          </div>    
+
+          <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" class="form-control input-estilizado" id="telefono" name="telefono" required>
+          </div>
+
+          <div class="form-group">
+              <label for="dni">DNI:</label>
+              <input type="text" class="form-control input-estilizado" id="dni" name="dni" required>
+          </div>
+
+          <div class="form-group mt-2">
+              <label for="imagen">Sube el comprobante de Pago:</label>
+              <input type="file" class="form-control-file" id="imagen" name="imagen" required>
+          </div>
+
+          <div class="form-group form-check mt-3 mb-3">
+              <input type="checkbox" class="form-check-input" id="politica_privacidad" name="politica_privacidad" required>
+              <label class="form-check-label" for="politica_privacidad">He leído y acepto la política de privacidad</label>
+          </div>
+
+          <button type="submit" class="btn boton-donar btn-block">Donar</button>
+      </form>
+    </div>
+
+    <!-- Columna para la imagen -->
+    <div class="col-md-6 text-center">
+      <img src="tu-imagen.jpg" alt="Imagen Donación" class="img-fluid" style="max-width: 100%; border-radius: 15px;">
+    </div>
+  </div>
+</div>
+
+
+
+<!------------------------------------------ALIANZAS-------------------------------------------------------------------->
+<h1 class="text-center">Galería de Fotos</h1>
+<div id="gallery-container" class="gallery"></div>
+
+    <!-- Las imágenes se cargarán aquí dinámicamente -->
+</div>
+
+</main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./Js/script.js"></script>
+<script src="./Js/php.js"></script>
 </html>
