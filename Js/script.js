@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ride: window.innerWidth > 600 ? 'carousel' : false 
   });
 
-  // Evento para controlar el deslizamiento automático al cambiar el tamaño de la pantalla
+ 
   window.addEventListener('resize', function () {
     if (window.innerWidth > 600) {
       carousel.cycle(); 
@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Añadir comportamiento para los textos del carrusel
+
   carouselElement.addEventListener('slid.bs.carousel', function () {
-    // Quitar la clase 'active' de todos los textos
+
     document.querySelectorAll('.Carousel-Text').forEach(function (text) {
       text.classList.remove('active');
     });

@@ -1,9 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-// Verificar la acción solicitada
+
 if (isset($_GET['action']) && $_GET['action'] == 'news') {
-    // Array con noticias simuladas
+    
     $news = [
         [
             'title' => 'Tucuman 2024 - Torneo Nacional c9. c11',

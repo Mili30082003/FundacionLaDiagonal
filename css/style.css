@@ -173,97 +173,79 @@ body {
 }
 
 /*NOTICIAS*/
-/* Estilo para el contenedor de noticias */
 #news-container {
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
-  /* Permite que las noticias se ajusten a nuevas filas si no caben */
+  flex-wrap: wrap; 
   justify-content: space-between;
-  gap: 20px;
+  gap: 20px; 
 }
 
-/* Estilo para cada noticia */
+
 .news-item {
-  background-color: #0c003f;
-  /* Fondo blanco para un aspecto limpio */
+  background-color: #0c003f; 
   padding: 20px;
-  border: 1px solid #001a35;
-  /* Borde azul */
-  width: 30%;
-  /* Ocupa el 30% del contenedor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra más suave */
+  border: 1px solid #001a35; 
+  width: calc(33.333% - 20px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  /* Para evitar que el contenido desborde */
+  overflow: hidden; 
   border-radius: 2em;
 }
 
-/* Añadir un efecto de hover */
+
 .news-item:hover {
-  transform: translateY(-5px);
-  /* Pequeño movimiento hacia arriba */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Sombra más pronunciada en hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-/* Imagen dentro de cada noticia */
+
 .news-item img {
-  max-width: 100%;
-  /* La imagen se ajusta al contenedor */
+  max-width: 100%; 
   height: auto;
   border-radius: 8px;
-  /* Bordes redondeados en las imágenes */
-  margin-bottom: 15px;
-  /* Espacio entre la imagen y el texto */
+  margin-bottom: 15px; 
 }
 
-/* Tipografía */
+
 .news-item h3 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ffffff;
-  /* Título en color azul */
-  text-align: center;
-  font-family: "Patua One", serif;
+  margin-bottom: 10px; 
+  color: #ffffff; 
+  text-align: center; 
+  font-family: "Patua One", serif; 
   font-weight: 400;
-  font-style: normal;
 }
 
 #news h2 {
-  color: white;
-  font-family: "Patua One", serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 10px;
+  color: white; 
+  font-family: "Patua One", serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  letter-spacing: 10px; 
+  text-align: center; 
 }
 
-/* Estilo para el contenedor principal */
+
 #news {
-  background-color: #0c0c0c;
-  padding: 20px;
-  /* Espaciado interno */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Sombra suave */
+  background-color: #0c0c0c; 
+  padding: 20px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 
-/* Responsivo: Ajuste para pantallas más pequeñas */
 @media (max-width: 768px) {
   .news-item {
-    width: 45%;
-    /* En pantallas medianas, cada noticia ocupará el 45% del ancho */
+    width: 100%; 
   }
 }
 
-@media (max-width: 576px) {
+
+@media (min-width: 768px) {
   .news-item {
-    width: 100%;
-    /* En pantallas pequeñas, cada noticia ocupará el 100% del ancho */
+    width: calc(33.333% - 20px); 
   }
 }
-
 /*FORMULARIO*/
 
 .formu {
@@ -406,19 +388,58 @@ body {
   transition: 1s;
 }
 
-/*MARQUEE*/
-/* Estilos generales para la sección de galería */
-/* Estilos generales para la sección de galería */
+.about {
+  padding: 2em 1em; 
+}
+
+.caja-about1,
+.caja-about2 {
+  margin-bottom: 2em; 
+}
+
+.boton-about {
+  margin-top: 1em; 
+}
+
+
+@media (max-width: 768px) {
+  .about {
+      padding: 1.5em 0.5em; 
+  }
+  
+  #caja-about1,
+  #caja-about2 {
+      text-align: center; 
+  }
+  
+  #caja-about1 img,
+  #caja-about2 img {
+      width: 100%; 
+      height: auto; 
+  }
+
+  .col-md-6 {
+      margin-bottom: 1em; 
+  }
+
+  .btn.boton-about {
+      width: 50%; 
+      font-size: 1em; 
+  }
+}
+
+
+
 #gallery {
   padding: 20px;
   background-color: #fdfeffcc;
-  /* Color de fondo claro */
+ 
 }
 
 #gallery h2 {
   text-align: center;
   color: #270070;
-  /* Color del título */
+
   margin-bottom: 20px;
   font-family: "Patua One", serif;
   font-weight: 400;
@@ -426,54 +447,41 @@ body {
   letter-spacing: 20px;
 }
 
-/* Contenedor de la galería */
+
 #container-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 110px;
-  /* Espacio entre las imágenes */
+
 }
 
 /*Alianzas*/
 
-/* Estilo para cada imagen */
 .gallery-item {
   flex: 0 1 calc(20% - 10px);
-  /* Cada imagen ocupa un 20% del ancho del contenedor */
   box-shadow: 0 2px 5px rgba(15, 4, 80, 0.774);
-  /* Sombra para dar profundidad */
   border-radius: 5px;
-  /* Bordes redondeados */
   overflow: hidden;
-  /* Para que no se salga el contenido */
   transition: transform 0.3s;
-  /* Transición suave al hacer hover */
 }
 
-/* Efecto hover */
+
 .gallery-item:hover {
   transform: scale(1.1);
-  /* Ampliar imagen al pasar el cursor */
 }
 
 .gallery-item img {
   width: 100%;
-  /* Asegura que la imagen ocupe todo el ancho */
   height: auto;
-  /* Mantiene la proporción de la imagen */
   display: block;
-  /* Elimina espacios en blanco debajo de la imagen */
 }
 
 /*FOOTER*/
 #main-footer {
   background-color: #000000;
-  /* Color de fondo negro */
   color: #ffffff;
-  /* Texto blanco */
   padding: 20px 0;
-  /* Espaciado en la parte superior e inferior */
   font-family: Arial, sans-serif;
   font-family: "Patua One", serif;
   font-weight: 400;
@@ -482,31 +490,24 @@ body {
 
 .footer-container {
   display: flex;
-  /* Flexbox para distribuir las secciones */
   justify-content: space-between;
-  /* Espacio entre las secciones */
   flex-wrap: wrap;
-  /* Permite que las secciones se ajusten en pantallas pequeñas */
   max-width: 1200px;
-  /* Ancho máximo del contenedor */
   margin: 0 auto;
-  /* Centrar el contenedor */
   padding: 0 20px;
-  /* Espaciado lateral */
+
 }
 
 .footer-section {
   width: 30%;
-  /* Cada sección ocupa el 30% del contenedor */
   margin-bottom: 20px;
-  /* Espaciado inferior */
+
 }
 
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #007BFF;
-  /* Azul para los títulos */
 }
 
 .footer-section p {
@@ -516,7 +517,6 @@ body {
 
 .footer-section ul {
   list-style: none;
-  /* Eliminar viñetas */
   padding: 0;
 }
 
@@ -526,31 +526,23 @@ body {
 
 .footer-section ul li a {
   color: #ffffff;
-  /* Texto blanco */
   text-decoration: none;
-  /* Sin subrayado */
   transition: color 0.3s;
-  /* Efecto de transición en hover */
 
 }
 
 .footer-section ul li a:hover {
   color: #007BFF;
-  /* Cambiar color a azul en hover */
 }
 
 .footer-section a img {
   width: 30px;
-  /* Tamaño de los íconos sociales */
   margin-right: 10px;
-  /* Espaciado entre los íconos */
   transition: transform 0.3s;
-  /* Efecto de zoom en hover */
 }
 
 .footer-section a:hover img {
   transform: scale(1.1);
-  /* Zoom al pasar el mouse */
 }
 
 .footer-bottom {
@@ -558,7 +550,6 @@ body {
   padding-top: 10px;
   font-size: 0.9rem;
   border-top: 1px solid #007BFF;
-  /* Línea azul en la parte superior del footer inferior */
   margin-top: 20px;
   color: #ffffff;
 }
@@ -568,5 +559,33 @@ body {
 
 }
 
+@media (max-width: 768px) {
+  #main-footer {
+      padding: 15px 0;
+  }
+  
+  .footer-section {
+      width: 100%;
+      text-align: center; 
+  }
+  
+  .footer-container {
+      flex-direction: column; 
+  }
+  
+  .footer-section a img {
+      width: 25px; 
+  }
+}
 
+@media (max-width: 576px) {
 
+  
+  .footer-bottom {
+      font-size: 0.8rem; 
+  }
+  
+  .social1 {
+      margin-right: 10px; 
+  }
+}

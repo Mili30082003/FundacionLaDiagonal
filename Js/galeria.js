@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Llamada para obtener las imágenes desde el servidor PHP
+
     fetch('php/galeria.php?action=gallery')
-        .then(response => response.json()) // Parsear la respuesta como JSON
+        .then(response => response.json()) 
         .then(data => {
             const galleryContainer = document.getElementById('container-gallery');
 
-            // Limpiar el contenedor de la galería
+           
             galleryContainer.innerHTML = '';
 
-            // Iterar sobre las imágenes recibidas
+          
             data.forEach(item => {
-                const imgDiv = document.createElement('div'); // Crear un contenedor para cada imagen
-                imgDiv.classList.add('gallery-item'); // Añadir clase para estilos (opcional)
+                const imgDiv = document.createElement('div'); 
+                imgDiv.classList.add('gallery-item'); 
 
-                // Crear el contenido de la imagen
-                imgDiv.innerHTML = item.content; // Utilizar el contenido HTML de la respuesta
+           
+                imgDiv.innerHTML = item.content; 
 
-                // Añadir la imagen al contenedor de la galería
+               
                 galleryContainer.appendChild(imgDiv);
             });
         })
