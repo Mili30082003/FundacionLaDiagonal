@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     fetch('php/server.php?action=news')
 
         .then(response => response.json())
@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error al obtener las noticias:', error);
         });
   });
-
+*/
   

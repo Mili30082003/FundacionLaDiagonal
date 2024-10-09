@@ -1,4 +1,5 @@
 <?php
+/*
 header('Content-Type: application/json');
 
 
@@ -26,3 +27,4 @@ if (isset($_GET['action']) && $_GET['action'] == 'news') {
     echo json_encode($news);
 }
 ?>
+*/
