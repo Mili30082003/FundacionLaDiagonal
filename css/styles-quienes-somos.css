@@ -96,26 +96,83 @@
   main {
     flex: 1 0 auto; 
 }
-/*CONTENEDOR PRINCIPAL*/
-.Titulo-Futsal{
+
+/* CONTENEDOR PRINCIPAL */
+.Titulo-Futsal {
     background-color: #000e8b;
     border-radius: 10em;
     font-family: "Patua One", serif;
     font-weight: 400;
-    font-style: normal;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2em;
 }
-#quienes-somos h2{
+
+
+
+#quienes-somos h2 {
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
-#equipos h2{
+
+#equipos h2 {
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
+
+.activity-box {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    transition: transform 0.3s;
+}
+
+.activity-box:hover {
+    transform: scale(1.05);  }
+
+.img-fluid {
+    max-height: 300px; 
+    object-fit: cover; 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .Titulo-Futsal h1 {
+        font-size: 2em;
+    }
+
+    #quienes-somos h2,
+    #equipos h2 {
+        font-size: 2em;
+    }
+
+    .activity-box {
+        padding: 2em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Titulo-Futsal {
+        padding: 15px;
+    }
+
+    #quienes-somos h2,
+    #equipos h2 {
+        font-size: 1.8em;
+    }
+
+    .activity-box {
+        padding: 1.5em;
+        font-size: 0.9em; 
+    }
+}
+
   /*FOOTER*/
   #main-footer {
     background-color: #000000;
@@ -130,9 +187,7 @@
   .section-texto h2{
    color: #0010a1;
   }
-  .section-texto{
-    margin-top: 7em;
-  }
+ 
   .imagen{
     border-radius: 3em;
 

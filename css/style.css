@@ -152,7 +152,7 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .carousel-img {
     max-height: 350px;
     object-fit: cover;
@@ -160,17 +160,19 @@ body {
   }
 
   .Carousel-Text {
-    bottom: 100px;
-  }
+    bottom: 25px;
+   }
 
   .Carousel-Text h2 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .Carousel-Text h3 {
     font-size: 2.2em;
-  }
+  
 }
+ 
+   }
 
 /*NOTICIAS*/
 /*#news-container {
@@ -315,6 +317,44 @@ body {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 480px) {
+  .formu {
+    padding: 20px;
+  }
+
+  .formu h2 {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+
+  .form-group label {
+    font-size: 1.2em;
+  }
+
+  .input-estilizado {
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  .boton-donar {
+    padding: 8px 15px;
+    font-size: 1.1em;
+  }
+
+  .contenedor-form-imagen {
+    flex-direction: column;
+  }
+
+  .formulario {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .imagen {
+    width: 100%;
+    padding: 0;
+  }
+}
 
 
 /*NOSOTROS*/
@@ -411,6 +451,44 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .about {
+    padding: 1em 0.5em;
+  }
+
+  #caja-about1 h3 {
+    font-size: 2.2em; /* Reducir tamaño de la fuente para títulos */
+  }
+
+  #caja-about1 p,
+  #caja-about2 p {
+    font-size: 1em; /* Ajuste de tamaño de fuente de párrafos */
+  }
+
+  #caja-about1,
+  #caja-about2 {
+    text-align: center;
+    padding: 1em 0.5em; /* Reducir padding */
+  }
+
+  .boton-about {
+    width: 100%; /* Aumentar el ancho del botón para que ocupe todo el espacio */
+    padding: 10px;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para el botón */
+    margin-top: 1em;
+  }
+
+  .col-md-6 {
+    width: 100%; /* Asegurar que las columnas ocupen el 100% en pantallas pequeñas */
+    margin-bottom: 1em;
+  }
+
+  #caja-about1 img,
+  #caja-about2 img {
+    width: 100%;
+    height: auto; /* Asegurar que las imágenes mantengan la proporción */
+  }
+}
 
 
 #gallery {
