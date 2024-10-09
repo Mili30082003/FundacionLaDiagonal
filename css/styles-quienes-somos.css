@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  
+
+  
+  /* boton de donaciones*/
+  .btn-donacion {
+    background-color: #0010a1;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: 2px solid white;
+    padding: 12px 20px;
+    position: relative;
+    overflow: hidden;
+    transform: color 2s;
+  
+  }
+  
+  .btn-donacion:hover {
+    background-color: #ffffff;
+  }
+  
+  .btn-donacion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #5562d8;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+  }
+  
+  .btn-donacion:hover::before {
+    width: 40%;
+  }
+  
+  /*estilos para el nav */
+  .navbar {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .link1 {
+    color: white;
+  
+  }
+  
+  .link1:hover {
+    background-color: #000e8b;
+    border-radius: 1em;
+    transition: 0.8s;
+    color: #ffffff;
+  }
+  
+  .logo-img {
+    width: 12vh;
+  }
+  
+  /* estilos para tablets*/
+  @media (max-width: 767px) {
+    .navbar-toggler {
+      background-color: rgb(17, 28, 175);
+  
+    }
+  
+    .navbar-toggler-icon {
+      background-color: rgb(4, 14, 158);
+    }
+  
+    .btn-donacion {
+      padding: 10px 20px;
+      border-radius: 100px;
+  
+    }
+  
+    .link1:hover {
+      background-color: #000e8b;
+      border-radius: 20em;
+      padding: 20px;
+      transition: 2s;
+      width: 10em;
+      color: #ffffff;
+    }
+  }
+  
+  main {
+    flex: 1 0 auto; /* Asegura que el main ocupe todo el espacio disponible */
+}
+/*CONTENEDOR PRINCIPAL*/
+.Titulo-Futsal{
+    background-color: #000e8b;
+    border-radius: 10em;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#quienes-somos h2{
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+#equipos h2{
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+  /*FOOTER*/
+  #main-footer {
+    background-color: #000000;
+    /* Color de fondo negro */
+    color: #ffffff;
+    /* Texto blanco */
+    padding: 20px 0;
+    /* Espaciado en la parte superior e inferior */
+    font-family: Arial, sans-serif;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .section-texto h2{
+   color: #0010a1;
+  }
+  .section-texto{
+    margin-top: 7em;
+  }
+  .imagen{
+    border-radius: 3em;
+
+  }
+  .footer-container {
+    display: flex;
+    /* Flexbox para distribuir las secciones */
+    justify-content: space-between;
+    /* Espacio entre las secciones */
+    flex-wrap: wrap;
+    /* Permite que las secciones se ajusten en pantallas pequeñas */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor */
+    padding: 0 20px;
+    /* Espaciado lateral */
+  }
+  
+  .footer-section {
+    width: 30%;
+    /* Cada sección ocupa el 30% del contenedor */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+    /* Azul para los títulos */
+  }
+  
+  .footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    /* Eliminar viñetas */
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    /* Texto blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+    transition: color 0.3s;
+    /* Efecto de transición en hover */
+  
+  }
+  
+  .footer-section ul li a:hover {
+    color: #007BFF;
+    /* Cambiar color a azul en hover */
+  }
+  
+  .footer-section a img {
+    width: 30px;
+    /* Tamaño de los íconos sociales */
+    margin-right: 10px;
+    /* Espaciado entre los íconos */
+    transition: transform 0.3s;
+    /* Efecto de zoom en hover */
+  }
+  
+  .footer-section a:hover img {
+    transform: scale(1.1);
+    /* Zoom al pasar el mouse */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #007BFF;
+    /* Línea azul en la parte superior del footer inferior */
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  .social1 {
+    margin-right: 20px;
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    #main-footer {
+        padding: 15px 0; /* Espaciado reducido */
+    }
+    
+    .footer-section {
+        width: 100%; /* Cada sección ocupa el 100% del contenedor en móviles */
+        text-align: center; /* Centrar texto en secciones del footer */
+    }
+    
+    .footer-container {
+        flex-direction: column; /* Apilar secciones en lugar de alinearlas en fila */
+    }
+    
+    .footer-section a img {
+        width: 25px; /* Reducir el tamaño de los íconos en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+ 
+    
+    .footer-bottom {
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño para el footer en móviles */
+    }
+    
+    .social1 {
+        margin-right: 10px; /* Reducir el espaciado de los íconos en móviles */
+    }
+}
