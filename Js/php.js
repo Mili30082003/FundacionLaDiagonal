@@ -30,26 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
   });
   /*MARQUEE*/ 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Llamada para obtener las imágenes desde el servidor PHP
-    fetch('php/galeria.php?action=galeria')
-        .then(response => response.json()) // Parsear la respuesta como JSON
-        .then(data => {
-            const galleryContainer = document.getElementById('gallery-container');
-
-            // Limpiar el contenedor de la galería
-            galleryContainer.innerHTML = '';
-
-            // Iterar sobre las imágenes recibidas
-            data.forEach(image => {
-                const imgElement = document.createElement('img');
-                imgElement.src = image; // Establecer la fuente de la imagen
-                imgElement.alt = 'Galería de imágenes'; // Texto alternativo
-                imgElement.classList.add('gallery-image'); // Puedes agregar estilos con CSS
-                galleryContainer.appendChild(imgElement); // Añadir la imagen al contenedor
-            });
-        })
-        .catch(error => {
-            console.error('Error al obtener las imágenes:', error);
-        });
-});
+  

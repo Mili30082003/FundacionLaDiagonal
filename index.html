@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="./img/Logo_diagonal-removebg-preview.png" type="image/png"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,26 +17,24 @@
     <header>
         <nav class="navbar navbar-expand-lg  ">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./img/Logo_diagonal-removebg-preview.png" class="logo-img" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="./img/Logo_diagonal-removebg-preview.png" class="logo-img" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-sm-end ">
                 <li class="nav-item mx-3">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link link1" href="#">¿Quienes Somos?</a>
                 </li>
+    
                 <li class="nav-item mx-4">
-                    <a class="nav-link link1" >Historia</a>
-                </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link link1" >Alianzas</a>
+                    <a class="nav-link link1" href="#gallery" >Alianzas</a>
                 </li>
                 <li class="nav-item ms-lg-3 mx-4">
-                    <a class="nav-link btn-donacion" >Haz tu Donacion</a>
+                    <a class="nav-link btn-donacion"  href="#donacion">Haz tu Donacion</a>
                 </li>
                 </ul>          
             </div>
@@ -83,7 +82,7 @@
 
 <!------------------------------------------NOTICIAS------------------------------------------------------->
 <main>
-  <section id="news" class="container">
+  <section id="news" class="container-fluid ">
     <h2>Últimas Noticias</h2>
     <div id="news-container"></div>
 </section>
@@ -95,7 +94,7 @@
       <h3>La Diagonal Futsal</h3>
       <p>
         Es una fundación dedicada a promover el deporte y la inclusión social a través del fútbol sala. 
-        Nuestro objetivo es brindar a niños y jóvenes en situación de vulnerabilidad la oportunidad de aprender y disfrutar del 
+        Nuestro objetivo es brindar a niños y jóvenes la oportunidad de aprender y disfrutar del 
         futsal, desarrollando habilidades deportivas, fomentando la disciplina y el trabajo en equipo.
       </p>
     </div>
@@ -118,19 +117,14 @@
     </div>
   </div>
   
-  
-
-  
-
- 
 </section>
 
 <!------------------------------------------DONACIONES------------------------------------------------------->
-<div class="container">
+<div class="container-fluid formu" id="donacion">
   <div class="row align-items-center">
     <!-- Columna para el formulario -->
     <div class="col-md-6">
-      <h1 class="text-start titulo">Donación</h1>
+      <h2 class="text-start titulo">Donación</h2>
       <form action="./php/donacion.php" method="POST" enctype="multipart/form-data">
           <div class="form-group">
               <label for="cantidad">Introduce una cantidad a donar:</label>
@@ -181,25 +175,58 @@
       </form>
     </div>
 
-    <!-- Columna para la imagen -->
-    <div class="col-md-6 text-center">
-      <img src="tu-imagen.jpg" alt="Imagen Donación" class="img-fluid" style="max-width: 100%; border-radius: 15px;">
-    </div>
+
   </div>
 </div>
 
 
 
 <!------------------------------------------ALIANZAS-------------------------------------------------------------------->
-<h1 class="text-center">Galería de Fotos</h1>
-<div id="gallery-container" class="gallery"></div>
+<section id="gallery" class="container-fluid mt-5">
+  <h2>ALIANZAS</h2>
+  <div id="container-gallery">
 
-    <!-- Las imágenes se cargarán aquí dinámicamente -->
-</div>
+  </div>
+</section>
 
 </main>
+<!------------------------------------------FOOTER-------------------------------------------------------------------->
+<footer id="main-footer">
+  <div class="footer-container mt-3">
+      <div class="footer-section about">
+          <h3>La Diagonal Futsal</h3>
+          <img src="./img/Logo_diagonal-removebg-preview.png" alt="" class="img-fluid w-50">
+        
+      </div>
+      <div class="footer-section links mt-4">
+      
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">¿Quienes Somos?</a></li>
+              <li><a href="#gallery">Alianzas</a></li>
+              <li><a href="#donacion">Haz Tu Donacion</a></li>
+          </ul>
+      </div>
+      <div class="footer-section social">
+          <h3>Síguenos</h3>
+          <a href="https://www.facebook.com/ladiagonalfutsal/"><i class="bi bi-facebook text-light fs-1 social1"></i></a>
+          <a href="https://www.instagram.com/ladiagonalcomplejo/p/CsL_tu_uKR7/"><i class="bi bi-instagram text-light fs-1 social1"></i></a>
+          <p class="mt-3">Direccion: <a href="https://maps.app.goo.gl/K2vXkp5f1oRhnXbP9">
+            Cabo Oscar Quipildor (colectora a Tafi Viejo) y Alicia P. Garzon - Lomas de Tafi, Tucuman, Tafí Viejo, Argentina</a> </p>
+            <p class="mt-3">Telefono:  <a href="tel:+0381 552-4198">0381 552-4198</a> </p>
+            <p class="mt-3">Mail: <a href="mailto:
+              ladiagonalfutsal@gmail.com">
+              ladiagonalfutsal@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 La Diagonal Futsal | Todos los derechos reservados.
+  </div>
+</footer>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./Js/script.js"></script>
 <script src="./Js/php.js"></script>
+<script src="./Js/galeria.js"></script>
 </html>

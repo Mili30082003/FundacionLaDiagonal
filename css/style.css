@@ -1,143 +1,156 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 
-  *{
-    margin: 0;
-    border: 0;
-    padding: 0;
-  }
-  
-  body{
+body {
 
-    min-height: 600px;
-  
-  }
+  min-height: 600px;
+
+}
+
 /* boton de donaciones*/
-  .btn-donacion {
-    background-color: #0010a1; 
-    color: white; 
-    border-radius: 5px; 
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    outline: 2px solid white;
-    padding: 12px 20px;
-    position: relative;
-    overflow: hidden;
-    transform: color 2s;
+.btn-donacion {
+  background-color: #0010a1;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: 2px solid white;
+  padding: 12px 20px;
+  position: relative;
+  overflow: hidden;
+  transform: color 2s;
 
-  }
+}
 
-  .btn-donacion:hover {
-    background-color: #ffffff;
-  }
-  .btn-donacion::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 0;
-    height: 100%;
-    background-color: #5562d8;
-    transform: skewX(35deg);
-    z-index: -1;
-    transition: width 1s;
-  }
-  .btn-donacion:hover::before {
-   width: 40%;
-  }
+.btn-donacion:hover {
+  background-color: #ffffff;
+}
+
+.btn-donacion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #5562d8;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 1s;
+}
+
+.btn-donacion:hover::before {
+  width: 40%;
+}
 
 /*estilos para el nav */
-  .navbar{   
-        font-family: "Patua One", serif;
-        font-weight: 400;
-        font-style: normal;
-       background-color: rgb(0, 0, 0);   
-  }
-  .link1{
-    color: white;
+.navbar {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(0, 0, 0);
+}
+
+.link1 {
+  color: white;
+
+}
+
+.link1:hover {
+  background-color: #000e8b;
+  border-radius: 1em;
+  transition: 0.8s;
+  color: #ffffff;
+}
+
+.logo-img {
+  width: 12vh;
+}
+
+/* estilos para tablets*/
+@media (max-width: 767px) {
+  .navbar-toggler {
+    background-color: rgb(17, 28, 175);
 
   }
-  .link1:hover{
+
+  .navbar-toggler-icon {
+    background-color: rgb(4, 14, 158);
+  }
+
+  .btn-donacion {
+    padding: 10px 20px;
+    border-radius: 100px;
+
+  }
+
+  .link1:hover {
     background-color: #000e8b;
-    border-radius: 1em;
-    transition: 0.8s ;
+    border-radius: 20em;
+    padding: 20px;
+    transition: 2s;
+    width: 10em;
     color: #ffffff;
   }
-  .logo-img{
-    width: 12vh;
-  }
-/* estilos para tablets*/
-  @media (max-width: 767px) {
-    .navbar-toggler {
-      background-color: rgb(17, 28, 175);
-   
-    }
-    .navbar-toggler-icon {
-      background-color: rgb(4, 14, 158); 
-    }
-    .btn-donacion {
-      padding: 10px 20px; 
-      border-radius: 100px; 
-     
-    }
-
-    .link1:hover{
-      background-color: #000e8b;
-      border-radius: 20em;
-      padding: 20px;
-      transition: 2s ;
-      width: 10em;
-      color: #ffffff;
-    }
-  }
-
-  /*estilos para el carousel */
-  .carousel-img {
-    width: 100%; 
-    max-height: 765px; 
-    object-fit: cover;
-    margin: 0 auto; 
-    opacity: 1; 
-    transition: opacity 0.9s ease;
-  }
-  .carousel-img-container{
-    position: relative;
-  }
-  .Carousel-Text{
-    position: absolute; 
-    bottom: 260px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    padding: 10px; 
-    border-radius: 5px; 
-    text-align: center;
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
-  
-    
-  }
-  .Carousel-Text h2{
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    background-color: #00087c;
-   border: #0505056c 2px solid;
-padding: 10px;
-border-radius: 100em;
-
-  }
-
-    .Carousel-Text h3{
-    font-size: 5.5em;
-     color: #ffffff;
-    padding: 20px;
-    opacity: 0; 
-    transition: opacity 2s; 
-
-  }
-  .Carousel-Text.active h3 {
-    opacity: 1; 
 }
+
+/*estilos para el carousel */
+.carousel-img {
+  width: 100%;
+  max-height: 765px;
+  object-fit: cover;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 0.9s ease;
+}
+
+.carousel-img-container {
+  position: relative;
+}
+
+.Carousel-Text {
+  position: absolute;
+  bottom: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.Carousel-Text h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  background-color: #00087c;
+  border: #0505056c 2px solid;
+  padding: 10px;
+  border-radius: 100em;
+
+}
+
+.Carousel-Text h3 {
+  font-size: 5.5em;
+  color: #ffffff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 2s;
+
+}
+
+.Carousel-Text.active h3 {
+  opacity: 1;
+}
+
 /* carousel para tablets*/
 @media (max-width: 767px) {
   .carousel-img {
@@ -145,220 +158,199 @@ border-radius: 100em;
     object-fit: cover;
     transition: opacity 0.9s ease;
   }
-  .Carousel-Text{
-    bottom: 100px; 
+
+  .Carousel-Text {
+    bottom: 100px;
   }
-  .Carousel-Text h2{
+
+  .Carousel-Text h2 {
     font-size: 1em;
   }
 
-    .Carousel-Text h3{
+  .Carousel-Text h3 {
     font-size: 2.2em;
   }
- }
+}
 
- /*NOTICIAS*/
+/*NOTICIAS*/
 /* Estilo para el contenedor de noticias */
 #news-container {
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap; /* Permite que las noticias se ajusten a nuevas filas si no caben */
+  flex-wrap: wrap;
+  /* Permite que las noticias se ajusten a nuevas filas si no caben */
   justify-content: space-between;
   gap: 20px;
 }
 
 /* Estilo para cada noticia */
 .news-item {
-  background-color: #fdf2e9; /* Color de fondo más cálido */
+  background-color: #0c003f;
+  /* Fondo blanco para un aspecto limpio */
   padding: 20px;
-  border: 1px solid #eee;
-  width: 30%; /* Ocupa el 30% del contenedor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
-  border-radius: 10px;
+  border: 1px solid #001a35;
+  /* Borde azul */
+  width: 30%;
+  /* Ocupa el 30% del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra más suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Para evitar que el contenido desborde */
+  overflow: hidden;
+  /* Para evitar que el contenido desborde */
+  border-radius: 2em;
 }
 
 /* Añadir un efecto de hover */
 .news-item:hover {
-  transform: translateY(-5px); /* Pequeño movimiento hacia arriba */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+  transform: translateY(-5px);
+  /* Pequeño movimiento hacia arriba */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Sombra más pronunciada en hover */
 }
 
 /* Imagen dentro de cada noticia */
 .news-item img {
-  max-width: 100%; /* La imagen se ajusta al contenedor */
+  max-width: 100%;
+  /* La imagen se ajusta al contenedor */
   height: auto;
-  border-radius: 8px; /* Bordes redondeados en las imágenes */
-  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+  border-radius: 8px;
+  /* Bordes redondeados en las imágenes */
+  margin-bottom: 15px;
+  /* Espacio entre la imagen y el texto */
 }
 
 /* Tipografía */
 .news-item h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #ffffff;
+  /* Título en color azul */
+  text-align: center;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.news-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-  text-align: justify; /* Justifica el texto para mejor presentación */
+#news h2 {
+  color: white;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 10px;
 }
+
+/* Estilo para el contenedor principal */
+#news {
+  background-color: #0c0c0c;
+  padding: 20px;
+  /* Espaciado interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
 
 /* Responsivo: Ajuste para pantallas más pequeñas */
 @media (max-width: 768px) {
   .news-item {
-    width: 45%; /* En pantallas medianas, cada noticia ocupará el 45% del ancho */
+    width: 45%;
+    /* En pantallas medianas, cada noticia ocupará el 45% del ancho */
   }
 }
 
 @media (max-width: 576px) {
   .news-item {
-    width: 100%; /* En pantallas pequeñas, cada noticia ocupará el 100% del ancho */
+    width: 100%;
+    /* En pantallas pequeñas, cada noticia ocupará el 100% del ancho */
   }
 }
+
 /*FORMULARIO*/
-.container.donacion-form {
-  background-color: #FFFFFF; /* Fondo blanco */
-  padding: 30px;
-  max-width: 600px;
-  margin: 50px auto;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  transition: transform 0.3s ease;
-}
 
-.container.donacion-form:hover {
-  transform: scale(1.02); /* Pequeña animación al pasar el mouse */
-}
-
-.titulo {
-  color: #000000; /* Título en negro */
-  font-size: 2.2em;
-  margin-bottom: 20px;
+.formu {
+  background-image: url('../img/LaDiagonalComplejo.jpg');
+  /* Reemplaza con la ruta correcta de la imagen */
+  background-size: cover;
+  /* Para que la imagen cubra todo el fondo */
+  background-position: center;
+  /* Centrar la imagen */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  padding: 50px;
+  /* Espaciado interno */
+  color: white;
+  /* Color blanco para el texto */
+  box-shadow: 0 4px 10px rgba(37, 37, 37, 0.637);
+  /* Añadir sombra suave al contenedor */
   font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 .form-group label {
-  color: #333333; /* Etiquetas en gris oscuro */
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: block;
+  font-size: 1.4em;
+}
+
+.formu h2 {
+  color: #ffffff;
+  /* Color del título en blanco */
+  font-size: 4rem;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 20px;
 }
 
 .input-estilizado {
-  border: 2px solid #0000FF; /* Borde azul moderno */
-  border-radius: 10px;
-  padding: 12px;
-  background-color: #f9f9f9;
-  font-size: 1em;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.input-estilizado:focus {
-  border-color: #1e90ff; /* Borde azul claro al enfocar */
-  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* Sombra al enfocar */
-  outline: none;
-}
-
-.form-check-input {
-  margin-right: 10px;
-}
-
-.form-check-label {
-  color: #000000; /* Texto de política en negro */
+  background-color: rgba(7, 7, 7, 0.651);
+  /* Fondo blanco semitransparente */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .boton-donar {
-  background-color: #1e90ff; /* Azul suave */
-  color: #FFFFFF; /* Texto en blanco */
+  background-color: #040349;
+  /* Azul para el botón */
+  color: #ffffff;
   border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
   width: 100%;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
+  font-size: 1.3em;
 }
 
 .boton-donar:hover {
-  background-color: #000000; /* Botón negro al hacer hover */
-  color: #FFFFFF;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
-  cursor: pointer;
-}
-
-.boton-donar:active {
-  transform: scale(0.98); /* Efecto de presión al hacer click */
-}
-
-/* Añadido para dispositivos móviles */
-@media (max-width: 768px) {
-  .container.donacion-form {
-      padding: 20px;
-  }
-
-  .titulo {
-      font-size: 1.8em;
-  }
-
-  .boton-donar {
-      font-size: 1em;
-  }
-}
-.contenedor-form-imagen {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.formulario {
-  width: 50%; /* El formulario ocupa la mitad del contenedor */
-  padding-right: 20px;
-}
-
-.imagen {
-  width: 50%; /* La imagen ocupa la mitad del contenedor */
-}
-
-.img-responsive {
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+  background-color: #0056b3;
+  /* Azul más oscuro en hover */
 }
 
 /* Estilo responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .contenedor-form-imagen {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .formulario, .imagen {
-      width: 100%; /* En pantallas pequeñas, ocupan el 100% */
-      padding: 0;
+  .formulario,
+  .imagen {
+    width: 100%;
+    /* En pantallas pequeñas, ocupan el 100% */
+    padding: 0;
   }
 
   .formulario {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
 
 /*NOSOTROS*/
-.about{
 
-}
-#caja-about1 h3{
+#caja-about1 h3 {
   font-family: "Patua One", serif;
   font-weight: 400;
   font-style: normal;
@@ -367,33 +359,38 @@ border-radius: 100em;
 
 
 }
-#caja-about1 p{ 
+
+#caja-about1 p {
   font-family: "Patua One", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.2em;
- 
+
 
 
 }
-#caja-about1{
+
+#caja-about1 {
   background-color: #0c0c0c;
   color: #eee;
 
 }
-#caja-about2 p{
-font-size: 1.4em;
-font-family: "Patua One", serif;
-font-weight: 400;
-font-style: normal;
+
+#caja-about2 p {
+  font-size: 1.4em;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
 
 
 }
-#caja-about2{
+
+#caja-about2 {
   background-color: #060749;
   color: #eee;
 
 }
+
 .boton-about {
   background-color: #fdf2e9;
   color: #000e8b;
@@ -402,21 +399,174 @@ font-style: normal;
   font-weight: 400;
   font-style: normal;
 }
-.boton-about:hover{
+
+.boton-about:hover {
   background-color: #000000;
   color: #fbfcff;
   transition: 1s;
 }
 
 /*MARQUEE*/
-.gallery {
+/* Estilos generales para la sección de galería */
+/* Estilos generales para la sección de galería */
+#gallery {
+  padding: 20px;
+  background-color: #fdfeffcc;
+  /* Color de fondo claro */
+}
+
+#gallery h2 {
+  text-align: center;
+  color: #270070;
+  /* Color del título */
+  margin-bottom: 20px;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 20px;
+}
+
+/* Contenedor de la galería */
+#container-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 110px;
+  /* Espacio entre las imágenes */
 }
 
-.gallery-image {
-  margin: 10px;
-  max-width: 200px; /* Ajusta según sea necesario */
-  border: 2px solid #000; /* Borde opcional */
+/*Alianzas*/
+
+/* Estilo para cada imagen */
+.gallery-item {
+  flex: 0 1 calc(20% - 10px);
+  /* Cada imagen ocupa un 20% del ancho del contenedor */
+  box-shadow: 0 2px 5px rgba(15, 4, 80, 0.774);
+  /* Sombra para dar profundidad */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  overflow: hidden;
+  /* Para que no se salga el contenido */
+  transition: transform 0.3s;
+  /* Transición suave al hacer hover */
 }
+
+/* Efecto hover */
+.gallery-item:hover {
+  transform: scale(1.1);
+  /* Ampliar imagen al pasar el cursor */
+}
+
+.gallery-item img {
+  width: 100%;
+  /* Asegura que la imagen ocupe todo el ancho */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  display: block;
+  /* Elimina espacios en blanco debajo de la imagen */
+}
+
+/*FOOTER*/
+#main-footer {
+  background-color: #000000;
+  /* Color de fondo negro */
+  color: #ffffff;
+  /* Texto blanco */
+  padding: 20px 0;
+  /* Espaciado en la parte superior e inferior */
+  font-family: Arial, sans-serif;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-container {
+  display: flex;
+  /* Flexbox para distribuir las secciones */
+  justify-content: space-between;
+  /* Espacio entre las secciones */
+  flex-wrap: wrap;
+  /* Permite que las secciones se ajusten en pantallas pequeñas */
+  max-width: 1200px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Centrar el contenedor */
+  padding: 0 20px;
+  /* Espaciado lateral */
+}
+
+.footer-section {
+  width: 30%;
+  /* Cada sección ocupa el 30% del contenedor */
+  margin-bottom: 20px;
+  /* Espaciado inferior */
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007BFF;
+  /* Azul para los títulos */
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  /* Eliminar viñetas */
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  /* Texto blanco */
+  text-decoration: none;
+  /* Sin subrayado */
+  transition: color 0.3s;
+  /* Efecto de transición en hover */
+
+}
+
+.footer-section ul li a:hover {
+  color: #007BFF;
+  /* Cambiar color a azul en hover */
+}
+
+.footer-section a img {
+  width: 30px;
+  /* Tamaño de los íconos sociales */
+  margin-right: 10px;
+  /* Espaciado entre los íconos */
+  transition: transform 0.3s;
+  /* Efecto de zoom en hover */
+}
+
+.footer-section a:hover img {
+  transform: scale(1.1);
+  /* Zoom al pasar el mouse */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  border-top: 1px solid #007BFF;
+  /* Línea azul en la parte superior del footer inferior */
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.social1 {
+  margin-right: 20px;
+
+}
+
+
+
